@@ -1,0 +1,240 @@
+.nav-link{
+    color: rgb(255,255,255) ;
+    font-size: 1.5rem;
+}
+
+.icons i{
+  width: 50px;
+  height: 50px;
+  background-color: rgb(117,24,239);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 100px;
+}
+.icons a{
+    text-decoration: none;
+}
+
+.navbar{
+    position: sticky !important;
+    top: 0 !important;
+}
+/* hero section */
+.hero{
+    background: url('./wave-haikei.svg') no-repeat center;
+    background-size: cover;
+    height: 100vh;
+  
+}
+.hero-image img{
+    z-index: -2;
+
+}
+
+.heading{
+    font-weight: 900;
+    letter-spacing: 1.3px;
+}
+
+.text-main{
+  color: #3661fc;
+
+}
+
+.hire-btn{
+    border: none;
+    padding: 10px;
+    min-width: 150px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    background-color: #3661fc;
+    color: #fff;
+}
+
+.cv-btn{
+    border: none;
+    padding: 10px;
+    min-width: 150px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    background: #3661fc52;
+    color: #fff;
+    border: 1px solid #3661fce2;
+}
+.hero-image{
+    margin-left: 100px;
+   
+}
+
+.hero-image img{
+    width: 80%;
+    transform: translateY(-100px) translateX(100px);
+    margin-top: 20px;
+    
+}
+.hero-image img{
+    width: 300px;
+    height: 400px;
+    margin-top: 200px;
+    border: 1px solid #222;
+    border-radius: 50px;
+}
+
+.hero-text{
+    margin-top: 100px;
+}
+
+/* about section */
+.about-image img{
+    width: 80%;
+    /* height: 30px; */
+    border-radius: 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.hobbies-card .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: royalblue;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    color: #fff;
+}
+.hobbies-card{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.hobbies-card:hover{
+    background-color: #cccccc56;
+}
+
+/* offer section */
+.t-btn{
+    border: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+}
+
+.offer-card{
+    box-shadow: -3px -3px 3px #ccc, 3px 3px 3px #ccc;  /* left-right  top-bottom shadow */
+    margin-bottom: 20px;
+
+}
+
+/* banner */
+.banner{
+    background:linear-gradient(315deg,#22222280,#22222281) , url(https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg) no-repeat ;
+    background-size: cover;
+    min-height: 300px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* experience */
+.experience-left{
+    position: relative;
+    z-index: -1;
+}
+
+.experience-left ul::before{
+    content: "";
+    position: absolute;
+    right: -25px;
+    top: 0;
+    width: 10px;
+    height: 100%;
+    background-color: transparent;
+    border-right: 3px dashed rgb(181, 181, 181);
+    z-index: -1;
+}
+
+.experience-left ul li {
+    position: relative;
+}
+
+.experience-left ul li::before{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #3661fc;
+    right: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 100px;
+    outline: 2px dashed #b7b7b7;
+    outline-offset: 7px;   /* gap between box border and outline */
+    z-index: -1;
+}
+.experience li {
+    margin-bottom: 40px;
+    padding-right: 20px;
+}
+.experience-right li{
+    padding-left: 20px;
+}
+
+/* project */
+.project-card{
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px #b6b5b5;
+    /* z-index: -1; */
+}
+.project-info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(#0000004f, #000);
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    padding: 10px;
+    color: #fff;
+    transform: scale(0);
+}
+.project-card:hover .project-info{
+    transform: scale(1);
+    transition: 0.8s;
+}
+/* blogs section  */
+.blogs-btn{
+    border: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: transparent;
+}
+.blog-card{
+    margin-bottom: 20px;
+    z-index: -1;
+}
+
+/* contact section */
+.contact input{
+    padding: 15px;
+    z-index: -1;
+}
+.contact{
+    background-color: #ebefff;
+    z-index: -1;
+}
+.contact button{
+    width: fit-content;
+}
+.container-fluid{
+    z-index: -1;
+}
